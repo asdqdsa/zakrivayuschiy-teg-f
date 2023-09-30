@@ -15,6 +15,140 @@
 */
 
 .page {
-  min-inline-size: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--themes-main-color-hover);
+  /* font-family: var(--font-inter, 'Courier New', monospace); */
+  font-family: var(--font-pressstart2p, 'Courier New', monospace);
+  font-size: 1.6rem;
   min-block-size: 100dvb;
+  min-inline-size: 32rem;
+  padding-block-start: 10.2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  gap: 2.5rem;
+  margin-block-end: 10.4rem;
+  min-block-size: 37.2rem;
+  min-inline-size: 69.6rem;
+  padding-block-start: 13.6rem;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__title {
+}
+
+.header__text {
+  text-transform: uppercase;
+}
+
+.header__text_lowercase {
+  text-transform: lowercase;
+}
+
+.theme-menu__button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.theme-menu__button::before {
+  content: '>';
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-inline-size: 69.6rem;
+}
+
+.card {
+  border: 0.2rem solid var(--themes-main-color);
+  background-color: aliceblue;
+  font-family: var(--font-inter, 'Courier New', monospace);
+  inline-size: 69.6rem;
+  min-block-size: 95.9rem;
+}
+
+.card__title {
+  padding: 0.3rem 2.4rem 0.3rem 1rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card__img {
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.about-inner-wrapper {
+  /* padding-block-end: 2.5rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+}
+
+.card__about {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  gap: 2.5rem;
+  line-height: 21px; /* 116.667% */
+}
+
+.card__button {
+  font-family: var(--font-pressstart2p, 'Courier New', monospace);
+  background-color: transparent;
+  border: 0.2rem solid var(--themes-main-color);
+  align-self: end;
+  padding: 0.9rem 1.7rem;
+  block-size: 3.8rem;
+  inline-size: 13rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 12.6px */
+}
+
+.card__button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  padding: 1.5rem 2rem;
+}
+
+.footer__button-save {
+  display: inline-flex;
+  align-items: center;
+  block-size: 5.5rem;
+  font-family: var(--font-pressstart2p, 'Courier New', monospace);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  gap: 0.8rem;
+  inline-size: 33.5rem;
+  line-height: 90%; /* 12.6px */
+}
+
+.footer__button:hover {
+  cursor: pointer;
 }

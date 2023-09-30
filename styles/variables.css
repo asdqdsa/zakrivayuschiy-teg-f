@@ -1,1 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --themes-main-color: #000;
+  --themes-background: #fff;
+  --font-inter: 'Inter';
+  --font-pressstart2p: 'Press Start 2P';
+  --image-background: url(../images/image.png);
+  --themes-main-color-hover: #0009;
+}
