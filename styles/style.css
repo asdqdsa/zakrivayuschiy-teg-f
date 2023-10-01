@@ -33,10 +33,11 @@
   align-items: center;
   background-color: #fff;
   gap: 2.5rem;
-  margin-block-end: 10.4rem;
-  min-block-size: 37.2rem;
-  min-inline-size: 69.6rem;
-  padding-block-start: 13.6rem;
+  margin-block-end: 10rem;
+  min-block-size: 36.6rem;
+  min-inline-size: 69.8rem;
+  padding-block-start: 13.4rem;
+  border: 0.2rem solid #000;
 }
 
 .header__wrapper {
@@ -47,9 +48,12 @@
 }
 
 .header__title {
+  font-size: 6.5rem;
+  font-weight: normal;
 }
 
 .header__text {
+  font-size: 2.3rem;
   text-transform: uppercase;
 }
 
@@ -57,9 +61,21 @@
   text-transform: lowercase;
 }
 
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.theme-menu__item {
+}
+
 .theme-menu__button {
   border: none;
   background-color: transparent;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -70,30 +86,56 @@
 .main {
   display: flex;
   flex-direction: column;
-  min-inline-size: 69.6rem;
+  /* min-inline-size: 69.8rem; */
+  gap: 5rem;
 }
 
 .card {
   border: 0.2rem solid var(--themes-main-color);
   background-color: aliceblue;
   font-family: var(--font-inter, 'Courier New', monospace);
-  inline-size: 69.6rem;
-  min-block-size: 95.9rem;
+  inline-size: 69.8rem;
+  /* min-block-size: 96.1rem; */
+  position: relative;
+}
+
+.card__content::before {
+  position: absolute;
+  content: '</HTML>';
+  font-family: var(--font-pressstart2p, 'Courier New', monospace);
+  font-size: 14px;
+  inset-block-start: 5.9rem;
+  inset-inline-end: 2.3rem;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
 }
 
 .card__title {
-  padding: 0.3rem 2.4rem 0.3rem 1rem;
-  font-size: 18px;
+  padding: 0.5rem 2.4rem 0.5rem 1rem;
+  border-block-end: 0.2rem solid var(--themes-main-color);
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
+.card__img-container {
+  /* block-size: 69.2rem; */
+  /* border-block-end: 0.2rem solid var(--themes-main-color); */
+  /* inline-size: 69.2rem; */
+  display: flex;
+}
+
 .card__img {
-  block-size: 100%;
+  aspect-ratio: 1 / 1;
+  /* block-size: 100%; */
+  block-size: 69.6rem;
   inline-size: 100%;
+  /* inline-size: 69.2rem; */
   object-fit: cover;
-  object-position: right;
+  object-position: 96%;
+  /* object-position: bottom right; */
+  /* scale: 1.01; */
 }
 
 .about-inner-wrapper {
@@ -107,6 +149,8 @@
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
+  /* padding-block-end: 2.3rem; */
+  border-block-start: 0.2rem solid var(--themes-main-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -133,11 +177,17 @@
 }
 
 .footer {
-  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 2rem;
+  background-color: #fff;
+  min-block-size: 20.8rem;
+  min-inline-size: 100%;
 }
 
 .footer__button-save {
-  display: inline-flex;
+  border: 0.2rem solid #000;
+  /* display: inline-flex; */
   align-items: center;
   block-size: 5.5rem;
   font-family: var(--font-pressstart2p, 'Courier New', monospace);
@@ -145,10 +195,61 @@
   font-style: normal;
   font-weight: 400;
   gap: 0.8rem;
-  inline-size: 33.5rem;
+  inline-size: 33.9rem;
   line-height: 90%; /* 12.6px */
 }
 
-.footer__button:hover {
+.footer__button-save:hover {
+  cursor: pointer;
+}
+
+/* dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.3);
+  backdrop-filter: blur(7px);
+} */
+
+.modal {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* margin: auto auto; */
+  border: 0.2rem solid var(--themes-main-color);
+  /* block-size: 19.3rem; */
+  inline-size: 35.7rem;
+  padding: 3rem;
+}
+
+.modal__inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 3rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+}
+
+.modal::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+  /* backdrop-filter: blur(7px); */
+}
+
+.modal__button {
+  padding: 0.9rem 1.7rem;
+  border: 0.2rem solid var(--themes-main-color);
+  background-color: transparent;
+  block-size: 3.4rem;
+  inline-size: 28.9rem;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 12.6px */
+  text-transform: uppercase;
+}
+
+.modal__button:hover {
   cursor: pointer;
 }
