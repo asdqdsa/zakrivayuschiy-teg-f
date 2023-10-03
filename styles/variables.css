@@ -7,4 +7,6 @@
   --font-pressstart2p: 'Press Start 2P';
   --image-background: url(../images/image.png);
   --themes-main-color-hover: #0009;
+  --gradient-main-color: #e7e7e7;
+  --gradient-secondary-color: #1a1a1a;
 }
