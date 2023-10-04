@@ -5,72 +5,53 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-:root.theme-dark {
+html.theme-light {
+  --themes-main-color: #000;
+  --themes-background: #fff;
+  --themes-main-color-hover: #0009;
+  --gradient-main-color: #e7e7e7;
+  --gradient-secondary-color: #1a1a1a;
+  --background-color-secondary: #d3d3d3;
+}
+
+html.theme-light .theme-menu__button:disabled::before,
+html.theme-light .theme-menu__button[disabled]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13' fill='none'%3E%3Cg clip-path='url(%23a)' opacity='.6'%3E%3Cpath fill='%23000' d='M0 12.25V0h1.75v1.75h3.5V3.5h3.5v1.75h3.5V7h-3.5v1.75h-3.5v1.75h-3.5v1.75H0Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h16v13H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+html.theme-dark {
   --themes-main-color: #00cc14;
   --themes-background: #000;
   --themes-main-color-hover: #00cc1499;
   --gradient-main-color: #007f0c;
   --gradient-secondary-color: #004306;
+  --background-color-secondary: #000;
+  /* --background-color-secondary: #000 #00cc14; */
+}
+
+html.theme-dark .page {
+}
+
+html.theme-dark .theme-menu__button:disabled::before,
+html.theme-dark .theme-menu__button[disabled]::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13' fill='none'%3E%3Cg clip-path='url(%23a)' opacity='.6'%3E%3Cpath fill='%2300CC14' d='M0 12.25V0h1.75v1.75h3.5V3.5h3.5v1.75h3.5V7h-3.5v1.75h-3.5v1.75h-3.5v1.75H0Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h16v13H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.theme-dark {
+  :root {
     --themes-main-color: #00cc14;
     --themes-background: #000;
     --themes-main-color-hover: #00cc1499;
     --gradient-main-color: #007f0c;
     --gradient-secondary-color: #004306;
+    --background-color-secondary: #000;
   }
 
-  :root.theme-dark .page {
-    background-image: linear-gradient(
-        transparent 30%,
-        var(--gradient-main-color, #007f0c) 30%
-      ),
-      linear-gradient(
-        90deg,
-        transparent 30%,
-        var(--gradient-main-color, #007f0c) 30%
-      );
-    color: var(--themes-main-color, #00cc14);
+  :root .page {
   }
 
-  :root.theme-dark .page::before {
-    background-image: linear-gradient(
-      180deg,
-      var(--gradient-main-color, #007f0c) 0%,
-      var(--gradient-secondary-color, #004306) 100%
-    );
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root.theme-light {
-    --themes-main-color: #000;
-    --themes-background: #fff;
-    --themes-main-color-hover: #0009;
-    --gradient-main-color: #e7e7e7;
-    --gradient-secondary-color: #1a1a1a;
-  }
-
-  :root.theme-light .page {
-    background-image: linear-gradient(
-        transparent 30%,
-        var(--gradient-main-color, #e7e7e7) 30%
-      ),
-      linear-gradient(
-        90deg,
-        transparent 30%,
-        var(--gradient-main-color, #e7e7e7) 30%
-      );
-    color: var(--themes-main-color, #000);
-  }
-
-  :root.theme-light .page::before {
-    background-image: linear-gradient(
-      180deg,
-      var(--gradient-main-color, #e7e7e7) 0%,
-      var(--gradient-secondary-color, #1a1a1a) 100%
-    );
+  :root .theme-menu__button:disabled::before,
+  :root .theme-menu__button[disabled]::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13' fill='none'%3E%3Cg clip-path='url(%23a)' opacity='.6'%3E%3Cpath fill='%2300CC14' d='M0 12.25V0h1.75v1.75h3.5V3.5h3.5v1.75h3.5V7h-3.5v1.75h-3.5v1.75h-3.5v1.75H0Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h16v13H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
   }
 }

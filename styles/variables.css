@@ -9,15 +9,5 @@
   --themes-main-color-hover: #0009;
   --gradient-main-color: #e7e7e7;
   --gradient-secondary-color: #1a1a1a;
+  --background-color-secondary: #d3d3d3;
 }
-
-/* :root {
-  --themes-main-color: #00cc14;
-  --themes-background: #000;
-  --themes-main-color-hover: #00cc1499;
-  --gradient-main-color: #007f0c;
-  --gradient-secondary-color: #004306;
-  --font-inter: 'Inter';
-  --font-pressstart2p: 'Press Start 2P';
-  --image-background: url(../images/image.png);
-} */
