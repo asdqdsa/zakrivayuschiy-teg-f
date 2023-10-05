@@ -5,9 +5,15 @@
   --themes-background: #fff;
   --font-inter: 'Inter';
   --font-pressstart2p: 'Press Start 2P';
-  --image-background: url(../images/image.png);
+  --font-main-weight: 400;
+  --font-inter-secondary-weight: 700;
+  --image-background: url(../images/card-background.png);
   --themes-main-color-hover: #0009;
   --gradient-main-color: #e7e7e7;
   --gradient-secondary-color: #1a1a1a;
   --background-color-secondary: #d3d3d3;
+  --background-gradient-start: 0.01%;
+  --contour-heart-color: #000;
+  --sparks-heart-color: #f00;
+  --heart-color: #f00;
 }
