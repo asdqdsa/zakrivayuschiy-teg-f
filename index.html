@@ -413,12 +413,15 @@
               </svg>
               <h2 class="modal__title">Вставьте дискету, чтобы продолжить</h2>
             </div>
-            <button type="button" class="modal__button button-effect modal__button_animated">ок</button>
+            <button type="button" class="modal__button button-effect modal__button_animated"
+              onclick="window['dialog-id'].close()">
+              ок</button>
           </div>
         </div>
       </form>
       <form method="dialog" target="_self">
-        <button class="close-dialog-button modal__button button-effect modal__button_animated">
+        <button class="close-dialog-button modal__button button-effect modal__button_animated"
+          onclick="window['dialog-id'].close()">
           <span class="visually-hidden "></span>ок
         </button>
       </form>
