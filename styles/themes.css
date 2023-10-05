@@ -21,11 +21,11 @@ html.theme-light {
 }
 
 html.theme-light .page {
-  font-variation-settings: 'wdth' var(--font-main-weight, 400);
+  font-variation-settings: 'wght' var(--font-main-weight, 400);
 }
 
 html.theme-light .card__title {
-  font-variation-settings: 'wdth' var(--font-secondary-weight, 700);
+  font-variation-settings: 'wght' var(--font-secondary-weight, 700);
 }
 
 html.theme-light .theme-menu__button:disabled::before,
@@ -49,11 +49,11 @@ html.theme-dark {
 }
 
 html.theme-dark .page {
-  font-variation-settings: 'wdth' var(--font-main-weight, 465);
+  font-variation-settings: 'wght' var(--font-main-weight, 465);
 }
 
 html.theme-dark .card__title {
-  font-variation-settings: 'wdth' var(--font-secondary-weight, 785);
+  font-variation-settings: 'wght' var(--font-secondary-weight, 785);
 }
 
 html.theme-dark .theme-menu__button:disabled::before,
@@ -77,11 +77,11 @@ html.theme-dark .theme-menu__button[disabled]::before {
   }
 
   :root .page {
-    font-variation-settings: 'wdth' var(--font-main-weight, 465);
+    font-variation-settings: 'wght' var(--font-main-weight, 465);
   }
 
   :root .card__title {
-    font-variation-settings: 'wdth' var(--font-secondary-weight, 785);
+    font-variation-settings: 'wght' var(--font-secondary-weight, 785);
   }
 
   :root .theme-menu__button:disabled::before,
