@@ -20,6 +20,14 @@ html.theme-light {
   --heart-color: #f00;
 }
 
+html.theme-light .page {
+  font-variation-settings: 'wdth' var(--font-main-weight, 400);
+}
+
+html.theme-light .card__title {
+  font-variation-settings: 'wdth' var(--font-secondary-weight, 700);
+}
+
 html.theme-light .theme-menu__button:disabled::before,
 html.theme-light .theme-menu__button[disabled]::before {
   color: var(--themes-main-color, #000);
@@ -40,6 +48,14 @@ html.theme-dark {
   --heart-color: #f00;
 }
 
+html.theme-dark .page {
+  font-variation-settings: 'wdth' var(--font-main-weight, 465);
+}
+
+html.theme-dark .card__title {
+  font-variation-settings: 'wdth' var(--font-secondary-weight, 785);
+}
+
 html.theme-dark .theme-menu__button:disabled::before,
 html.theme-dark .theme-menu__button[disabled]::before {
   color: var(--themes-main-color, #00cc14);
@@ -58,6 +74,14 @@ html.theme-dark .theme-menu__button[disabled]::before {
     --background-gradient-start: 0%;
     --contour-heart-color: #00cc14;
     --sparks-heart-color: #f00;
+  }
+
+  :root .page {
+    font-variation-settings: 'wdth' var(--font-main-weight, 465);
+  }
+
+  :root .card__title {
+    font-variation-settings: 'wdth' var(--font-secondary-weight, 785);
   }
 
   :root .theme-menu__button:disabled::before,

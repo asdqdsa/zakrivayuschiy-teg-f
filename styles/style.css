@@ -615,3 +615,12 @@
     text-stroke: 0.1rem var(--themes-background, #fff);
   }
 }
+
+@supports (
+  (font-variation-settings: 'wdth' var(--font-main-weight)) or
+    (font-variation-settings: 'wdth' normal)
+) {
+  .page {
+    font-variation-settings: 'wdth' var(--font-main-weight);
+  }
+}
