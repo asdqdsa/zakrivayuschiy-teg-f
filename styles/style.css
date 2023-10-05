@@ -41,7 +41,7 @@
   color: var(--themes-main-color, #000);
   font-family: var(--font-inter, 'Courier New', monospace);
   font-size: 1.6rem;
-  font-variation-settings: 'wdth' var(--font-main-weight, 400);
+  font-variation-settings: 'wght' var(--font-main-weight, 400);
   font-weight: var(--font-main-weight, 400);
   min-block-size: 100dvb;
   padding-block-start: 10.2rem;
@@ -617,10 +617,10 @@
 }
 
 @supports (
-  (font-variation-settings: 'wdth' var(--font-main-weight)) or
-    (font-variation-settings: 'wdth' normal)
+  (font-variation-settings: 'wght' var(--font-main-weight)) or
+    (font-variation-settings: 'wght' normal)
 ) {
   .page {
-    font-variation-settings: 'wdth' var(--font-main-weight);
+    font-variation-settings: 'wght' var(--font-main-weight);
   }
 }
