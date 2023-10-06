@@ -574,8 +574,7 @@
   }
 
   .modal__title {
-    width: 198px;
-    height: 63px;
+    inline-size: 19.8rem;
   }
 }
 
