@@ -39,7 +39,7 @@
   background-position: center;
   background-size: cover;
   color: var(--themes-main-color, #000);
-  font-family: var(--font-inter, 'Courier New', monospace);
+  font-family: var(--font-inter, Arial, sans-serif);
   font-size: 1.6rem;
   font-variation-settings: 'wght' var(--font-main-weight, 400);
   font-weight: var(--font-main-weight, 400);
@@ -155,6 +155,13 @@
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.card-shelf {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,7 +355,7 @@
   color: var(--themes-main-color, #000);
 }
 
-.footer {
+.button-save-container {
   display: flex;
   justify-content: center;
   padding: 5rem 2rem;
@@ -358,12 +365,12 @@
 }
 
 .svg-floppy {
-  width: 4.2rem;
-  height: 1.9rem;
+  block-size: 2.1rem;
+  inline-size: 2.1rem;
   object-position: left;
 }
 
-.footer__button-save {
+.button-save {
   display: flex;
   align-items: center;
   border: 0.2rem solid var(--themes-main-color, #000);
@@ -374,14 +381,19 @@
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
+  gap: 0.8rem;
   inline-size: 33.9rem;
-  line-height: 1.26rem;
-  padding-inline-end: 0.2rem;
+  padding-block: 1.8rem;
+  padding-inline-start: 1.9rem;
   transition: 0.5s ease-out;
 }
 
-.footer__button-save_animated:hover {
+.button-save_animated:hover {
   box-shadow: inset 33.9rem 0 0 0 var(--themes-main-color, #000);
+}
+
+.button-save__text-save {
+  display: flex;
 }
 
 .dialog {
@@ -403,7 +415,7 @@
   background-color: var(--themes-background, #fff);
   block-size: 19.3rem;
   font-family: var(--font-pressstart2p, 'Courier New', monospace);
-  inline-size: 35.7rem;
+  inline-size: 35.3rem;
   inset-block-start: calc(50vb - (19.3rem / 2));
   padding-block: 2.8rem;
   padding-inline: 3rem;
@@ -482,11 +494,11 @@
     block-size: 100%;
   }
 
-  .footer {
+  .button-save-container {
     min-inline-size: clamp(37.5rem, 90%, 63rem);
   }
 
-  .footer__button-save {
+  .button-save {
     flex-direction: column;
     padding: 1.5rem 0;
     block-size: 8rem;
@@ -531,18 +543,39 @@
     inline-size: 37.5rem;
   }
 
-  .footer__button-save {
+  .button-save {
+    block-size: 8.4rem;
     gap: 0.8rem;
     padding-block-end: 0;
   }
 
   .svg-floppy {
+    block-size: 2.8rem;
+    inline-size: 2.8rem;
+  }
+
+  .modal {
+    block-size: 19.5rem;
+    inline-size: 34.1rem;
+    padding-inline: 4rem;
+  }
+
+  .modal__title-wrapper {
+    gap: 3rem;
+  }
+
+  .modal__svg-floppy {
     block-size: 3.9rem;
     inline-size: 3.9rem;
   }
 
-  .footer__text-save {
-    padding-block-end: 0.8rem;
+  .modal__inner-container {
+    justify-content: space-around;
+  }
+
+  .modal__title {
+    width: 198px;
+    height: 63px;
   }
 }
 
