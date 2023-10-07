@@ -358,10 +358,10 @@
 .button-save-container {
   display: flex;
   justify-content: center;
-  padding: 5rem 2rem;
   background-color: transparent;
-  min-block-size: 20.8rem;
   min-inline-size: clamp(37.5rem, 100%, 70rem);
+  padding-block-end: 10.3rem;
+  padding-inline: 2rem;
 }
 
 .svg-floppy {
@@ -544,9 +544,7 @@
   }
 
   .button-save-container {
-    min-block-size: unset;
     padding-block-end: 10rem;
-    padding-block-start: unset;
   }
 
   .button-save {
