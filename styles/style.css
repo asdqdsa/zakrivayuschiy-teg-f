@@ -543,6 +543,12 @@
     inline-size: 37.5rem;
   }
 
+  .button-save-container {
+    min-block-size: unset;
+    padding-block-end: 10rem;
+    padding-block-start: unset;
+  }
+
   .button-save {
     block-size: 8.4rem;
     gap: 0.8rem;
